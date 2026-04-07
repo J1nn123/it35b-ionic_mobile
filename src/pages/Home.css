@@ -1,37 +1,69 @@
-/* Center everything */
-.center-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    min-height: 100vh;
+/* Page background */
+.home-content {
+  --background: #f5f7fa;
 }
 
-/* Card Style */
-.todo-card {
-  width: 100%;
-  max-width: 400px;
+/* Main container */
+.home-container {
+  padding: 16px;
+}
+
+/* Title */
+.home-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Cards layout */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Individual card */
+.card {
+  background: white;
+  padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(171, 56, 56, 0.1);
-  
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.2s;
 }
 
-/* Input Style */
-.custom-input {
-  border: 1px solid #060606;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
+/* Card hover (desktop) */
+.card:hover {
+  transform: translateY(-3px);
 }
 
-/* Button */
-.add-btn {
-  margin-bottom: 15px;
-  --border-radius: 10px;
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-/* Task Item */
-.task-item {
-  border-radius: 10px;
-  margin-bottom: 8px;
-  --background: #cac0c0;
+
+ion-menu {
+  --width: 220px;
+}
+
+
+ion-item {
+  --padding-start: 16px;
+  font-size: 15px;
+}
+
+
+ion-item.router-link-active {
+  --background: #e0f2ff;
+  font-weight: 600;
+}
+
+
+ion-button {
+  margin: 16px;
 }
